@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: xvjm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-gopr-tenant/byoc-app-bpja/xvjm@sha256:8a4ea7c5517d2b404877ed7d6a5371636b0d9d860dd3cd4021f6791ed8935657
+        name: my-java-quarkus
+        resources: {}
+status: {}
